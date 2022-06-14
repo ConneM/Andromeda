@@ -1,0 +1,66 @@
+NO_PERMS: "You do not have permission to use this command!"
+
+##########################################
+#        Suggest Embeds/Messages         #
+##########################################
+
+SUGGEST:
+  EMOJIS:
+    VOTE1: "<:correct:945381416189952040>"
+    VOTE2: "<:wrong:945450511119814676>"
+
+MESSAGE_SUGGEST:
+  SUGGEST:
+    PROVIDE_MESSAGE: "You need to provide a suggestion!"
+    NO_CHANNEL: "`❌` Does not have a suggestion channel set up! Please set one up using `/config suggestChannel <channel>` command."
+    SYSTEM_DISABLED: "The suggestion system is disabled."
+
+EMBED_SUGGEST:
+  SUGGEST:
+    SEND_SUGGEST:
+      AUTHOR: ""
+      DESCRIPTION: "Your [suggestion](<message.link>) has been sent to <channel>"
+      FOOTER: ""
+      COLOR: "GREEN"
+    ENVIED_SUGGEST:
+      AUTHOR: "💡 New Suggestion | <user.name> "
+      DESCRIPTION: "**Suggestion** ↴ \n >>> <args>"
+      FOOTER: "<user.tag> Suggestion | User ID (<user.id>)"
+      COLOR: "RANDOM"
+    FIELDS:
+      FIELD_PART1: "Status ↴"
+      FIELD_PART2: '<a:pending:957388309729001602> Pending'
+  ACCEPT:
+    SEND_ACCEPTED:
+      AUTHOR: ""
+      DESCRIPTION: "Suggestion with the ID `<args>` has been __Accepted__"
+      FOOTER: ""
+      COLOR: "GREEN"
+    ACCEPTED:
+      AUTHOR: "<data.author.name>"
+      DESCRIPTION: "<data.description>"
+      FOOTER: "Suggestion Accepted"
+      COLOR: "GREEN"
+    FIELDS:
+      FIELD_PART1: "Status ↴"
+      FIELD_PART2: '<a:accepted:957394701143666688> Accepted'
+      ACCEPT:
+        FIELD_PART1: "Accepted by <user.tag>"
+        FIELD_PART2: '>>> <args.join>'
+  DENY:
+    SEND_DENIED:
+      AUTHOR: ""
+      DESCRIPTION: "Suggestion with the id `<args>` has been __Declined__"
+      FOOTER: ""
+      COLOR: "RED"
+    DENIED:
+      AUTHOR: "<data.author.name>"
+      DESCRIPTION: "<data.description>"
+      FOOTER: "Suggestion Declined"
+      COLOR: "RED"
+    FIEDLS:
+      FIELD_PART1: "Status ↴"
+      FIELD_PART2: '<a:denied:957394528170561658> Declined'
+      DENY:
+        FIELD_PART1: "Declined by <user.tag>"
+        FIELD_PART2: '>>> <args.join>'
